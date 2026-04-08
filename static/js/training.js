@@ -2,9 +2,10 @@ const EXERCISES = {
     python: [
         {
             id: 1,
-            title: "FizzBuzz",
-            description: "Imprima números de 1 a 100. Múltiplos de 3 imprima 'Fizz', de 5 'Buzz', e de ambos 'FizzBuzz'",
-            difficulty: "easy",
+            title: 'FizzBuzz',
+            description:
+                "Imprima números de 1 a 100. Múltiplos de 3 imprima 'Fizz', de 5 'Buzz', e de ambos 'FizzBuzz'",
+            difficulty: 'easy',
             starter: `def fizzbuzz(n):
     # Sua implementação aqui
     pass
@@ -25,17 +26,17 @@ for i in range(1, 21):
 for i in range(1, 21):
     print(fizzbuzz(i))`,
             testCases: [
-                { input: 15, expected: "FizzBuzz" },
-                { input: 9, expected: "Fizz" },
-                { input: 10, expected: "Buzz" },
-                { input: 7, expected: "7" }
-            ]
+                { input: 15, expected: 'FizzBuzz' },
+                { input: 9, expected: 'Fizz' },
+                { input: 10, expected: 'Buzz' },
+                { input: 7, expected: '7' },
+            ],
         },
         {
             id: 2,
-            title: "Palíndromo",
-            description: "Verifique se uma string é um palíndromo (lê igual de trás pra frente)",
-            difficulty: "easy",
+            title: 'Palíndromo',
+            description: 'Verifique se uma string é um palíndromo (lê igual de trás pra frente)',
+            difficulty: 'easy',
             starter: `def is_palindrome(s):
     # Sua implementação aqui
     pass
@@ -50,17 +51,17 @@ print(is_palindrome("hello"))  # False`,
 print(is_palindrome("radar"))
 print(is_palindrome("hello"))`,
             testCases: [
-                { input: "radar", expected: true },
-                { input: "level", expected: true },
-                { input: "hello", expected: false },
-                { input: "A man a plan a canal Panama", expected: true }
-            ]
+                { input: 'radar', expected: true },
+                { input: 'level', expected: true },
+                { input: 'hello', expected: false },
+                { input: 'A man a plan a canal Panama', expected: true },
+            ],
         },
         {
             id: 3,
-            title: "Fibonacci",
-            description: "Retorne o n-ésimo número da sequência de Fibonacci",
-            difficulty: "easy",
+            title: 'Fibonacci',
+            description: 'Retorne o n-ésimo número da sequência de Fibonacci',
+            difficulty: 'easy',
             starter: `def fibonacci(n):
     # Sua implementação aqui
     pass
@@ -78,14 +79,14 @@ for i in range(1, 11):
             testCases: [
                 { input: 1, expected: 1 },
                 { input: 10, expected: 55 },
-                { input: 15, expected: 610 }
-            ]
+                { input: 15, expected: 610 },
+            ],
         },
         {
             id: 4,
-            title: "Fatorial",
-            description: "Calcule o fatorial de um número (n!)",
-            difficulty: "easy",
+            title: 'Fatorial',
+            description: 'Calcule o fatorial de um número (n!)',
+            difficulty: 'easy',
             starter: `def factorial(n):
     # Sua implementação aqui
     pass
@@ -101,14 +102,14 @@ print(factorial(5))`,
             testCases: [
                 { input: 5, expected: 120 },
                 { input: 0, expected: 1 },
-                { input: 10, expected: 3628800 }
-            ]
+                { input: 10, expected: 3628800 },
+            ],
         },
         {
             id: 5,
-            title: "Números Primos",
-            description: "Verifique se um número é primo",
-            difficulty: "easy",
+            title: 'Números Primos',
+            description: 'Verifique se um número é primo',
+            difficulty: 'easy',
             starter: `def is_prime(n):
     # Sua implementação aqui
     pass
@@ -130,14 +131,14 @@ print(is_prime(15))`,
                 { input: 17, expected: true },
                 { input: 1, expected: false },
                 { input: 2, expected: true },
-                { input: 15, expected: false }
-            ]
+                { input: 15, expected: false },
+            ],
         },
         {
             id: 6,
-            title: "Bubble Sort",
-            description: "Implemente o algoritmo Bubble Sort para ordenar uma lista",
-            difficulty: "medium",
+            title: 'Bubble Sort',
+            description: 'Implemente o algoritmo Bubble Sort para ordenar uma lista',
+            difficulty: 'medium',
             starter: `def bubble_sort(arr):
     # Sua implementação aqui
     pass
@@ -155,14 +156,14 @@ print(bubble_sort([64, 34, 25, 12, 22, 11, 90]))`,
 print(bubble_sort([64, 34, 25, 12, 22, 11, 90]))`,
             testCases: [
                 { input: [5, 2, 8, 1], expected: [1, 2, 5, 8] },
-                { input: [3, 3, 3], expected: [3, 3, 3] }
-            ]
+                { input: [3, 3, 3], expected: [3, 3, 3] },
+            ],
         },
         {
             id: 7,
-            title: "Busca Binária",
-            description: "Implemente busca binária para encontrar um elemento em lista ordenada",
-            difficulty: "medium",
+            title: 'Busca Binária',
+            description: 'Implemente busca binária para encontrar um elemento em lista ordenada',
+            difficulty: 'medium',
             starter: `def binary_search(arr, target):
     # Sua implementação aqui
     pass
@@ -187,15 +188,15 @@ arr = [1, 3, 5, 7, 9, 11, 13]
 print(binary_search(arr, 7))
 print(binary_search(arr, 6))`,
             testCases: [
-                { input: [[1,3,5,7,9], 5], expected: 2 },
-                { input: [[1,3,5,7,9], 6], expected: -1 }
-            ]
+                { input: [[1, 3, 5, 7, 9], 5], expected: 2 },
+                { input: [[1, 3, 5, 7, 9], 6], expected: -1 },
+            ],
         },
         {
             id: 8,
-            title: "Reversão de String",
-            description: "Inverta uma string sem usar funções built-in",
-            difficulty: "easy",
+            title: 'Reversão de String',
+            description: 'Inverta uma string sem usar funções built-in',
+            difficulty: 'easy',
             starter: `def reverse_string(s):
     # Sua implementação aqui
     pass
@@ -209,15 +210,15 @@ print(reverse_string("hello"))  # "olleh"`,
 
 print(reverse_string("hello"))`,
             testCases: [
-                { input: "hello", expected: "olleh" },
-                { input: "Python", expected: "nohtyP" }
-            ]
+                { input: 'hello', expected: 'olleh' },
+                { input: 'Python', expected: 'nohtyP' },
+            ],
         },
         {
             id: 9,
-            title: "Contagem de Palavras",
-            description: "Conte a frequência de cada palavra em uma string",
-            difficulty: "medium",
+            title: 'Contagem de Palavras',
+            description: 'Conte a frequência de cada palavra em uma string',
+            difficulty: 'medium',
             starter: `def word_count(s):
     # Sua implementação aqui
     pass
@@ -232,15 +233,15 @@ print(word_count("hello world hello"))`,
 
 print(word_count("hello world hello"))`,
             testCases: [
-                { input: "hello world hello", expected: {hello: 2, world: 1} },
-                { input: "a a a b b c", expected: {a: 3, b: 2, c: 1} }
-            ]
+                { input: 'hello world hello', expected: { hello: 2, world: 1 } },
+                { input: 'a a a b b c', expected: { a: 3, b: 2, c: 1 } },
+            ],
         },
         {
             id: 10,
-            title: "Calculadora Simples",
-            description: "Implemente uma calculadora que executa operações básicas",
-            difficulty: "medium",
+            title: 'Calculadora Simples',
+            description: 'Implemente uma calculadora que executa operações básicas',
+            difficulty: 'medium',
             starter: `def calculator(a, op, b):
     # Sua implementação aqui
     pass
@@ -264,14 +265,14 @@ print(calculator(10, '*', 2))`,
             testCases: [
                 { input: [10, '+', 5], expected: 15 },
                 { input: [10, '/', 2], expected: 5 },
-                { input: [10, '/', 0], expected: "Erro" }
-            ]
+                { input: [10, '/', 0], expected: 'Erro' },
+            ],
         },
         {
             id: 11,
-            title: "Validação de Email",
-            description: "Valide se um email segue o formato correto",
-            difficulty: "medium",
+            title: 'Validação de Email',
+            description: 'Valide se um email segue o formato correto',
+            difficulty: 'medium',
             starter: `def validate_email(email):
     # Sua implementação aqui
     pass
@@ -294,16 +295,16 @@ print(validate_email("invalid"))  # False`,
 print(validate_email("user@example.com"))
 print(validate_email("invalid"))`,
             testCases: [
-                { input: "user@example.com", expected: true },
-                { input: "invalid", expected: false },
-                { input: "user@", expected: false }
-            ]
+                { input: 'user@example.com', expected: true },
+                { input: 'invalid', expected: false },
+                { input: 'user@', expected: false },
+            ],
         },
         {
             id: 12,
-            title: "Maior e Menor",
-            description: "Encontre o maior e menor elemento de um array",
-            difficulty: "easy",
+            title: 'Maior e Menor',
+            description: 'Encontre o maior e menor elemento de um array',
+            difficulty: 'easy',
             starter: `def find_max_min(arr):
     # Sua implementação aqui
     pass
@@ -315,14 +316,14 @@ print(find_max_min([3, 1, 4, 1, 5, 9]))`,
 print(find_max_min([3, 1, 4, 1, 5, 9]))`,
             testCases: [
                 { input: [3, 1, 4, 1, 5, 9], expected: [9, 1] },
-                { input: [1], expected: [1, 1] }
-            ]
+                { input: [1], expected: [1, 1] },
+            ],
         },
         {
             id: 13,
-            title: "Remover Duplicatas",
-            description: "Remova elementos duplicados mantendo a ordem",
-            difficulty: "easy",
+            title: 'Remover Duplicatas',
+            description: 'Remova elementos duplicados mantendo a ordem',
+            difficulty: 'easy',
             starter: `def remove_duplicates(arr):
     # Sua implementação aqui
     pass
@@ -340,14 +341,14 @@ print(remove_duplicates([1, 2, 2, 3, 1, 4]))`,
 print(remove_duplicates([1, 2, 2, 3, 1, 4]))`,
             testCases: [
                 { input: [1, 2, 2, 3, 1, 4], expected: [1, 2, 3, 4] },
-                { input: [], expected: [] }
-            ]
+                { input: [], expected: [] },
+            ],
         },
         {
             id: 14,
-            title: "Triângulo de Pascal",
-            description: "Gere as primeiras n linhas do Triângulo de Pascal",
-            difficulty: "medium",
+            title: 'Triângulo de Pascal',
+            description: 'Gere as primeiras n linhas do Triângulo de Pascal',
+            difficulty: 'medium',
             starter: `def pascal_triangle(n):
     # Sua implementação aqui
     pass
@@ -366,14 +367,14 @@ for row in pascal_triangle(5):
 for row in pascal_triangle(5):
     print(row)`,
             testCases: [
-                { input: 5, expected: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]] }
-            ]
+                { input: 5, expected: [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1]] },
+            ],
         },
         {
             id: 15,
-            title: "Anagrama",
-            description: "Verifique se duas strings são anagramas",
-            difficulty: "easy",
+            title: 'Anagrama',
+            description: 'Verifique se duas strings são anagramas',
+            difficulty: 'easy',
             starter: `def is_anagram(s1, s2):
     # Sua implementação aqui
     pass
@@ -386,17 +387,18 @@ print(is_anagram("hello", "world"))     # False`,
 print(is_anagram("listen", "silent"))
 print(is_anagram("hello", "world"))`,
             testCases: [
-                { input: ["listen", "silent"], expected: true },
-                { input: ["hello", "world"], expected: false }
-            ]
-        }
+                { input: ['listen', 'silent'], expected: true },
+                { input: ['hello', 'world'], expected: false },
+            ],
+        },
     ],
     javascript: [
         {
             id: 1,
-            title: "FizzBuzz",
-            description: "Imprima números de 1 a 100. Múltiplos de 3 imprima 'Fizz', de 5 'Buzz', e de ambos 'FizzBuzz'",
-            difficulty: "easy",
+            title: 'FizzBuzz',
+            description:
+                "Imprima números de 1 a 100. Múltiplos de 3 imprima 'Fizz', de 5 'Buzz', e de ambos 'FizzBuzz'",
+            difficulty: 'easy',
             starter: `function fizzBuzz(n) {
     // Sua implementação aqui
 }
@@ -415,16 +417,16 @@ for (let i = 1; i <= 20; i++) {
     console.log(fizzBuzz(i));
 }`,
             testCases: [
-                { input: 15, expected: "FizzBuzz" },
-                { input: 9, expected: "Fizz" },
-                { input: 10, expected: "Buzz" }
-            ]
+                { input: 15, expected: 'FizzBuzz' },
+                { input: 9, expected: 'Fizz' },
+                { input: 10, expected: 'Buzz' },
+            ],
         },
         {
             id: 2,
-            title: "Palíndromo",
-            description: "Verifique se uma string é um palíndromo",
-            difficulty: "easy",
+            title: 'Palíndromo',
+            description: 'Verifique se uma string é um palíndromo',
+            difficulty: 'easy',
             starter: `function isPalindrome(s) {
     // Sua implementação aqui
 }
@@ -439,15 +441,15 @@ console.log(isPalindrome("hello"));`,
 console.log(isPalindrome("radar"));
 console.log(isPalindrome("hello"));`,
             testCases: [
-                { input: "radar", expected: true },
-                { input: "hello", expected: false }
-            ]
+                { input: 'radar', expected: true },
+                { input: 'hello', expected: false },
+            ],
         },
         {
             id: 3,
-            title: "Fibonacci",
-            description: "Retorne o n-ésimo número da sequência de Fibonacci",
-            difficulty: "easy",
+            title: 'Fibonacci',
+            description: 'Retorne o n-ésimo número da sequência de Fibonacci',
+            difficulty: 'easy',
             starter: `function fibonacci(n) {
     // Sua implementação aqui
 }
@@ -465,14 +467,14 @@ for (let i = 1; i <= 10; i++) {
 }`,
             testCases: [
                 { input: 10, expected: 55 },
-                { input: 1, expected: 1 }
-            ]
+                { input: 1, expected: 1 },
+            ],
         },
         {
             id: 4,
-            title: "Fatorial",
-            description: "Calcule o fatorial de um número",
-            difficulty: "easy",
+            title: 'Fatorial',
+            description: 'Calcule o fatorial de um número',
+            difficulty: 'easy',
             starter: `function factorial(n) {
     // Sua implementação aqui
 }
@@ -486,14 +488,14 @@ console.log(factorial(5));`,
 console.log(factorial(5));`,
             testCases: [
                 { input: 5, expected: 120 },
-                { input: 0, expected: 1 }
-            ]
+                { input: 0, expected: 1 },
+            ],
         },
         {
             id: 5,
-            title: "Números Primos",
-            description: "Verifique se um número é primo",
-            difficulty: "easy",
+            title: 'Números Primos',
+            description: 'Verifique se um número é primo',
+            difficulty: 'easy',
             starter: `function isPrime(n) {
     // Sua implementação aqui
 }
@@ -512,14 +514,14 @@ console.log(isPrime(17));
 console.log(isPrime(15));`,
             testCases: [
                 { input: 17, expected: true },
-                { input: 1, expected: false }
-            ]
+                { input: 1, expected: false },
+            ],
         },
         {
             id: 6,
-            title: "Bubble Sort",
-            description: "Implemente o algoritmo Bubble Sort",
-            difficulty: "medium",
+            title: 'Bubble Sort',
+            description: 'Implemente o algoritmo Bubble Sort',
+            difficulty: 'medium',
             starter: `function bubbleSort(arr) {
     // Sua implementação aqui
 }
@@ -538,15 +540,13 @@ console.log(bubbleSort([64, 34, 25, 12, 22, 11, 90]));`,
 }
 
 console.log(bubbleSort([64, 34, 25, 12, 22, 11, 90]));`,
-            testCases: [
-                { input: [5, 2, 8, 1], expected: [1, 2, 5, 8] }
-            ]
+            testCases: [{ input: [5, 2, 8, 1], expected: [1, 2, 5, 8] }],
         },
         {
             id: 7,
-            title: "Busca Binária",
-            description: "Implemente busca binária",
-            difficulty: "medium",
+            title: 'Busca Binária',
+            description: 'Implemente busca binária',
+            difficulty: 'medium',
             starter: `function binarySearch(arr, target) {
     // Sua implementação aqui
 }
@@ -567,15 +567,15 @@ console.log(binarySearch(arr, 7));`,
 const arr = [1, 3, 5, 7, 9, 11, 13];
 console.log(binarySearch(arr, 7));`,
             testCases: [
-                { input: [[1,3,5,7,9], 5], expected: 2 },
-                { input: [[1,3,5,7,9], 6], expected: -1 }
-            ]
+                { input: [[1, 3, 5, 7, 9], 5], expected: 2 },
+                { input: [[1, 3, 5, 7, 9], 6], expected: -1 },
+            ],
         },
         {
             id: 8,
-            title: "Reversão de String",
-            description: "Inverta uma string",
-            difficulty: "easy",
+            title: 'Reversão de String',
+            description: 'Inverta uma string',
+            difficulty: 'easy',
             starter: `function reverseString(s) {
     // Sua implementação aqui
 }
@@ -586,15 +586,13 @@ console.log(reverseString("hello"));`,
 }
 
 console.log(reverseString("hello"));`,
-            testCases: [
-                { input: "hello", expected: "olleh" }
-            ]
+            testCases: [{ input: 'hello', expected: 'olleh' }],
         },
         {
             id: 9,
-            title: "Contagem de Palavras",
-            description: "Conte a frequência de cada palavra",
-            difficulty: "medium",
+            title: 'Contagem de Palavras',
+            description: 'Conte a frequência de cada palavra',
+            difficulty: 'medium',
             starter: `function wordCount(s) {
     // Sua implementação aqui
 }
@@ -610,15 +608,13 @@ console.log(wordCount("hello world hello"));`,
 }
 
 console.log(wordCount("hello world hello"));`,
-            testCases: [
-                { input: "hello world hello", expected: {hello: 2, world: 1} }
-            ]
+            testCases: [{ input: 'hello world hello', expected: { hello: 2, world: 1 } }],
         },
         {
             id: 10,
-            title: "Calculadora",
-            description: "Implemente uma calculadora simples",
-            difficulty: "medium",
+            title: 'Calculadora',
+            description: 'Implemente uma calculadora simples',
+            difficulty: 'medium',
             starter: `function calculator(a, op, b) {
     // Sua implementação aqui
 }
@@ -632,14 +628,14 @@ console.log(calculator(10, '+', 5));`,
 console.log(calculator(10, '+', 5));`,
             testCases: [
                 { input: [10, '+', 5], expected: 15 },
-                { input: [10, '/', 2], expected: 5 }
-            ]
+                { input: [10, '/', 2], expected: 5 },
+            ],
         },
         {
             id: 11,
-            title: "Validação de Email",
-            description: "Valide o formato de um email",
-            difficulty: "medium",
+            title: 'Validação de Email',
+            description: 'Valide o formato de um email',
+            difficulty: 'medium',
             starter: `function validateEmail(email) {
     // Sua implementação aqui
 }
@@ -651,15 +647,15 @@ console.log(validateEmail("user@example.com"));`,
 
 console.log(validateEmail("user@example.com"));`,
             testCases: [
-                { input: "user@example.com", expected: true },
-                { input: "invalid", expected: false }
-            ]
+                { input: 'user@example.com', expected: true },
+                { input: 'invalid', expected: false },
+            ],
         },
         {
             id: 12,
-            title: "Maior e Menor",
-            description: "Encontre maior e menor em array",
-            difficulty: "easy",
+            title: 'Maior e Menor',
+            description: 'Encontre maior e menor em array',
+            difficulty: 'easy',
             starter: `function findMaxMin(arr) {
     // Sua implementação aqui
 }
@@ -670,15 +666,13 @@ console.log(findMaxMin([3, 1, 4, 1, 5, 9]));`,
 }
 
 console.log(findMaxMin([3, 1, 4, 1, 5, 9]));`,
-            testCases: [
-                { input: [3, 1, 4, 1, 5, 9], expected: [9, 1] }
-            ]
+            testCases: [{ input: [3, 1, 4, 1, 5, 9], expected: [9, 1] }],
         },
         {
             id: 13,
-            title: "Remover Duplicatas",
-            description: "Remova elementos duplicados",
-            difficulty: "easy",
+            title: 'Remover Duplicatas',
+            description: 'Remova elementos duplicados',
+            difficulty: 'easy',
             starter: `function removeDuplicates(arr) {
     // Sua implementação aqui
 }
@@ -689,15 +683,13 @@ console.log(removeDuplicates([1, 2, 2, 3, 1, 4]));`,
 }
 
 console.log(removeDuplicates([1, 2, 2, 3, 1, 4]));`,
-            testCases: [
-                { input: [1, 2, 2, 3, 1, 4], expected: [1, 2, 3, 4] }
-            ]
+            testCases: [{ input: [1, 2, 2, 3, 1, 4], expected: [1, 2, 3, 4] }],
         },
         {
             id: 14,
-            title: "Merge Sort",
-            description: "Implemente o algoritmo Merge Sort",
-            difficulty: "hard",
+            title: 'Merge Sort',
+            description: 'Implemente o algoritmo Merge Sort',
+            difficulty: 'hard',
             starter: `function mergeSort(arr) {
     // Sua implementação aqui
 }
@@ -720,15 +712,13 @@ function merge(left, right) {
 }
 
 console.log(mergeSort([64, 34, 25, 12, 22, 11, 90]));`,
-            testCases: [
-                { input: [64, 34, 25, 12], expected: [12, 25, 34, 64] }
-            ]
+            testCases: [{ input: [64, 34, 25, 12], expected: [12, 25, 34, 64] }],
         },
         {
             id: 15,
-            title: "Anagrama",
-            description: "Verifique se duas strings são anagramas",
-            difficulty: "easy",
+            title: 'Anagrama',
+            description: 'Verifique se duas strings são anagramas',
+            difficulty: 'easy',
             starter: `function isAnagram(s1, s2) {
     // Sua implementação aqui
 }
@@ -741,17 +731,17 @@ console.log(isAnagram("listen", "silent"));`,
 
 console.log(isAnagram("listen", "silent"));`,
             testCases: [
-                { input: ["listen", "silent"], expected: true },
-                { input: ["hello", "world"], expected: false }
-            ]
-        }
+                { input: ['listen', 'silent'], expected: true },
+                { input: ['hello', 'world'], expected: false },
+            ],
+        },
     ],
     java: [
         {
             id: 1,
-            title: "FizzBuzz",
-            description: "Imprima FizzBuzz de 1 a 100",
-            difficulty: "easy",
+            title: 'FizzBuzz',
+            description: 'Imprima FizzBuzz de 1 a 100',
+            difficulty: 'easy',
             starter: `public class Solution {
     public static String fizzBuzz(int n) {
         // Sua implementação aqui
@@ -779,15 +769,15 @@ console.log(isAnagram("listen", "silent"));`,
     }
 }`,
             testCases: [
-                { input: 15, expected: "FizzBuzz" },
-                { input: 9, expected: "Fizz" }
-            ]
+                { input: 15, expected: 'FizzBuzz' },
+                { input: 9, expected: 'Fizz' },
+            ],
         },
         {
             id: 2,
-            title: "Palíndromo",
-            description: "Verifique se uma string é palíndromo",
-            difficulty: "easy",
+            title: 'Palíndromo',
+            description: 'Verifique se uma string é palíndromo',
+            difficulty: 'easy',
             starter: `public class Solution {
     public static boolean isPalindrome(String s) {
         // Sua implementação aqui
@@ -812,15 +802,15 @@ console.log(isAnagram("listen", "silent"));`,
     }
 }`,
             testCases: [
-                { input: "radar", expected: true },
-                { input: "hello", expected: false }
-            ]
+                { input: 'radar', expected: true },
+                { input: 'hello', expected: false },
+            ],
         },
         {
             id: 3,
-            title: "Fibonacci",
-            description: "Retorne o n-ésimo número de Fibonacci",
-            difficulty: "easy",
+            title: 'Fibonacci',
+            description: 'Retorne o n-ésimo número de Fibonacci',
+            difficulty: 'easy',
             starter: `public class Solution {
     public static int fibonacci(int n) {
         // Sua implementação aqui
@@ -847,14 +837,14 @@ console.log(isAnagram("listen", "silent"));`,
 }`,
             testCases: [
                 { input: 10, expected: 55 },
-                { input: 1, expected: 1 }
-            ]
+                { input: 1, expected: 1 },
+            ],
         },
         {
             id: 4,
-            title: "Fatorial",
-            description: "Calcule o fatorial de um número",
-            difficulty: "easy",
+            title: 'Fatorial',
+            description: 'Calcule o fatorial de um número',
+            difficulty: 'easy',
             starter: `public class Solution {
     public static long factorial(int n) {
         // Sua implementação aqui
@@ -877,14 +867,14 @@ console.log(isAnagram("listen", "silent"));`,
 }`,
             testCases: [
                 { input: 5, expected: 120 },
-                { input: 0, expected: 1 }
-            ]
+                { input: 0, expected: 1 },
+            ],
         },
         {
             id: 5,
-            title: "Número Primo",
-            description: "Verifique se um número é primo",
-            difficulty: "easy",
+            title: 'Número Primo',
+            description: 'Verifique se um número é primo',
+            difficulty: 'easy',
             starter: `public class Solution {
     public static boolean isPrime(int n) {
         // Sua implementação aqui
@@ -912,14 +902,14 @@ console.log(isAnagram("listen", "silent"));`,
 }`,
             testCases: [
                 { input: 17, expected: true },
-                { input: 1, expected: false }
-            ]
+                { input: 1, expected: false },
+            ],
         },
         {
             id: 6,
-            title: "Bubble Sort",
-            description: "Implemente Bubble Sort",
-            difficulty: "medium",
+            title: 'Bubble Sort',
+            description: 'Implemente Bubble Sort',
+            difficulty: 'medium',
             starter: `public class Solution {
     public static int[] bubbleSort(int[] arr) {
         // Sua implementação aqui
@@ -955,15 +945,13 @@ console.log(isAnagram("listen", "silent"));`,
         }
     }
 }`,
-            testCases: [
-                { input: [5, 2, 8, 1], expected: [1, 2, 5, 8] }
-            ]
+            testCases: [{ input: [5, 2, 8, 1], expected: [1, 2, 5, 8] }],
         },
         {
             id: 7,
-            title: "Busca Binária",
-            description: "Implemente busca binária",
-            difficulty: "medium",
+            title: 'Busca Binária',
+            description: 'Implemente busca binária',
+            difficulty: 'medium',
             starter: `public class Solution {
     public static int binarySearch(int[] arr, int target) {
         // Sua implementação aqui
@@ -992,15 +980,13 @@ console.log(isAnagram("listen", "silent"));`,
         System.out.println(binarySearch(arr, 7));
     }
 }`,
-            testCases: [
-                { input: [[1,3,5,7,9], 5], expected: 2 }
-            ]
+            testCases: [{ input: [[1, 3, 5, 7, 9], 5], expected: 2 }],
         },
         {
             id: 8,
-            title: "Reversão de String",
-            description: "Inverta uma string",
-            difficulty: "easy",
+            title: 'Reversão de String',
+            description: 'Inverta uma string',
+            difficulty: 'easy',
             starter: `public class Solution {
     public static String reverseString(String s) {
         // Sua implementação aqui
@@ -1021,15 +1007,13 @@ console.log(isAnagram("listen", "silent"));`,
         System.out.println(reverseString("hello"));
     }
 }`,
-            testCases: [
-                { input: "hello", expected: "olleh" }
-            ]
+            testCases: [{ input: 'hello', expected: 'olleh' }],
         },
         {
             id: 9,
-            title: "Contagem de Palavras",
-            description: "Conte frequência de palavras",
-            difficulty: "medium",
+            title: 'Contagem de Palavras',
+            description: 'Conte frequência de palavras',
+            difficulty: 'medium',
             starter: `import java.util.*;
 public class Solution {
     public static Map<String, Integer> wordCount(String s) {
@@ -1056,15 +1040,13 @@ public class Solution {
         System.out.println(wordCount("hello world hello"));
     }
 }`,
-            testCases: [
-                { input: "hello world hello", expected: {hello: 2, world: 1} }
-            ]
+            testCases: [{ input: 'hello world hello', expected: { hello: 2, world: 1 } }],
         },
         {
             id: 10,
-            title: "Calculadora",
-            description: "Implemente calculadora simples",
-            difficulty: "medium",
+            title: 'Calculadora',
+            description: 'Implemente calculadora simples',
+            difficulty: 'medium',
             starter: `public class Solution {
     public static double calculator(double a, String op, double b) {
         // Sua implementação aqui
@@ -1090,15 +1072,13 @@ public class Solution {
         System.out.println(calculator(10, "+", 5));
     }
 }`,
-            testCases: [
-                { input: [10, "+", 5], expected: 15 }
-            ]
+            testCases: [{ input: [10, '+', 5], expected: 15 }],
         },
         {
             id: 11,
-            title: "Validação de Email",
-            description: "Valide formato de email",
-            difficulty: "medium",
+            title: 'Validação de Email',
+            description: 'Valide formato de email',
+            difficulty: 'medium',
             starter: `public class Solution {
     public static boolean validateEmail(String email) {
         // Sua implementação aqui
@@ -1120,15 +1100,15 @@ public class Solution {
     }
 }`,
             testCases: [
-                { input: "user@example.com", expected: true },
-                { input: "invalid", expected: false }
-            ]
+                { input: 'user@example.com', expected: true },
+                { input: 'invalid', expected: false },
+            ],
         },
         {
             id: 12,
-            title: "Maior e Menor",
-            description: "Encontre maior e menor",
-            difficulty: "easy",
+            title: 'Maior e Menor',
+            description: 'Encontre maior e menor',
+            difficulty: 'easy',
             starter: `public class Solution {
     public static int[] findMaxMin(int[] arr) {
         // Sua implementação aqui
@@ -1157,15 +1137,13 @@ public class Solution {
         }
     }
 }`,
-            testCases: [
-                { input: [3, 1, 4, 1, 5, 9], expected: [9, 1] }
-            ]
+            testCases: [{ input: [3, 1, 4, 1, 5, 9], expected: [9, 1] }],
         },
         {
             id: 13,
-            title: "Remover Duplicatas",
-            description: "Remova duplicatas do array",
-            difficulty: "easy",
+            title: 'Remover Duplicatas',
+            description: 'Remova duplicatas do array',
+            difficulty: 'easy',
             starter: `import java.util.*;
 public class Solution {
     public static List<Integer> removeDuplicates(int[] arr) {
@@ -1189,15 +1167,13 @@ public class Solution {
         System.out.println(removeDuplicates(new int[]{1, 2, 2, 3, 1, 4}));
     }
 }`,
-            testCases: [
-                { input: [1, 2, 2, 3, 1, 4], expected: [1, 2, 3, 4] }
-            ]
+            testCases: [{ input: [1, 2, 2, 3, 1, 4], expected: [1, 2, 3, 4] }],
         },
         {
             id: 14,
-            title: "Quick Sort",
-            description: "Implemente Quick Sort",
-            difficulty: "hard",
+            title: 'Quick Sort',
+            description: 'Implemente Quick Sort',
+            difficulty: 'hard',
             starter: `public class Solution {
     public static void quickSort(int[] arr, int low, int high) {
         // Sua implementação aqui
@@ -1241,15 +1217,13 @@ public class Solution {
         for (int num : arr) System.out.print(num + " ");
     }
 }`,
-            testCases: [
-                { input: [64, 34, 25, 12], expected: [12, 25, 34, 64] }
-            ]
+            testCases: [{ input: [64, 34, 25, 12], expected: [12, 25, 34, 64] }],
         },
         {
             id: 15,
-            title: "Anagrama",
-            description: "Verifique se são anagramas",
-            difficulty: "easy",
+            title: 'Anagrama',
+            description: 'Verifique se são anagramas',
+            difficulty: 'easy',
             starter: `import java.util.*;
 public class Solution {
     public static boolean isAnagram(String s1, String s2) {
@@ -1275,17 +1249,15 @@ public class Solution {
         System.out.println(isAnagram("listen", "silent"));
     }
 }`,
-            testCases: [
-                { input: ["listen", "silent"], expected: true }
-            ]
-        }
+            testCases: [{ input: ['listen', 'silent'], expected: true }],
+        },
     ],
     cpp: [
         {
             id: 1,
-            title: "FizzBuzz",
-            description: "Imprima FizzBuzz de 1 a 100",
-            difficulty: "easy",
+            title: 'FizzBuzz',
+            description: 'Imprima FizzBuzz de 1 a 100',
+            difficulty: 'easy',
             starter: `#include <iostream>
 using namespace std;
 
@@ -1317,15 +1289,15 @@ int main() {
     return 0;
 }`,
             testCases: [
-                { input: 15, expected: "FizzBuzz" },
-                { input: 9, expected: "Fizz" }
-            ]
+                { input: 15, expected: 'FizzBuzz' },
+                { input: 9, expected: 'Fizz' },
+            ],
         },
         {
             id: 2,
-            title: "Palíndromo",
-            description: "Verifique se uma string é palíndromo",
-            difficulty: "easy",
+            title: 'Palíndromo',
+            description: 'Verifique se uma string é palíndromo',
+            difficulty: 'easy',
             starter: `#include <iostream>
 #include <string>
 using namespace std;
@@ -1361,15 +1333,15 @@ int main() {
     return 0;
 }`,
             testCases: [
-                { input: "radar", expected: true },
-                { input: "hello", expected: false }
-            ]
+                { input: 'radar', expected: true },
+                { input: 'hello', expected: false },
+            ],
         },
         {
             id: 3,
-            title: "Fibonacci",
-            description: "Retorne o n-ésimo número de Fibonacci",
-            difficulty: "easy",
+            title: 'Fibonacci',
+            description: 'Retorne o n-ésimo número de Fibonacci',
+            difficulty: 'easy',
             starter: `#include <iostream>
 using namespace std;
 
@@ -1400,14 +1372,14 @@ int main() {
 }`,
             testCases: [
                 { input: 10, expected: 55 },
-                { input: 1, expected: 1 }
-            ]
+                { input: 1, expected: 1 },
+            ],
         },
         {
             id: 4,
-            title: "Fatorial",
-            description: "Calcule o fatorial de um número",
-            difficulty: "easy",
+            title: 'Fatorial',
+            description: 'Calcule o fatorial de um número',
+            difficulty: 'easy',
             starter: `#include <iostream>
 using namespace std;
 
@@ -1434,14 +1406,14 @@ int main() {
 }`,
             testCases: [
                 { input: 5, expected: 120 },
-                { input: 0, expected: 1 }
-            ]
+                { input: 0, expected: 1 },
+            ],
         },
         {
             id: 5,
-            title: "Número Primo",
-            description: "Verifique se um número é primo",
-            difficulty: "easy",
+            title: 'Número Primo',
+            description: 'Verifique se um número é primo',
+            difficulty: 'easy',
             starter: `#include <iostream>
 #include <cmath>
 using namespace std;
@@ -1475,14 +1447,14 @@ int main() {
 }`,
             testCases: [
                 { input: 17, expected: true },
-                { input: 1, expected: false }
-            ]
+                { input: 1, expected: false },
+            ],
         },
         {
             id: 6,
-            title: "Bubble Sort",
-            description: "Implemente Bubble Sort",
-            difficulty: "medium",
+            title: 'Bubble Sort',
+            description: 'Implemente Bubble Sort',
+            difficulty: 'medium',
             starter: `#include <iostream>
 using namespace std;
 
@@ -1517,15 +1489,13 @@ int main() {
     for (int i = 0; i < n; i++) cout << arr[i] << " ";
     return 0;
 }`,
-            testCases: [
-                { input: [5, 2, 8, 1], expected: [1, 2, 5, 8] }
-            ]
+            testCases: [{ input: [5, 2, 8, 1], expected: [1, 2, 5, 8] }],
         },
         {
             id: 7,
-            title: "Busca Binária",
-            description: "Implemente busca binária",
-            difficulty: "medium",
+            title: 'Busca Binária',
+            description: 'Implemente busca binária',
+            difficulty: 'medium',
             starter: `#include <iostream>
 using namespace std;
 
@@ -1558,15 +1528,13 @@ int main() {
     cout << binarySearch(arr, 7, 7) << endl;
     return 0;
 }`,
-            testCases: [
-                { input: [[1,3,5,7,9], 5], expected: 2 }
-            ]
+            testCases: [{ input: [[1, 3, 5, 7, 9], 5], expected: 2 }],
         },
         {
             id: 8,
-            title: "Reversão de String",
-            description: "Inverta uma string",
-            difficulty: "easy",
+            title: 'Reversão de String',
+            description: 'Inverta uma string',
+            difficulty: 'easy',
             starter: `#include <iostream>
 #include <string>
 using namespace std;
@@ -1594,15 +1562,13 @@ int main() {
     cout << reverseString("hello") << endl;
     return 0;
 }`,
-            testCases: [
-                { input: "hello", expected: "olleh" }
-            ]
+            testCases: [{ input: 'hello', expected: 'olleh' }],
         },
         {
             id: 9,
-            title: "Contagem de Palavras",
-            description: "Conte frequência de palavras",
-            difficulty: "medium",
+            title: 'Contagem de Palavras',
+            description: 'Conte frequência de palavras',
+            difficulty: 'medium',
             starter: `#include <iostream>
 #include <unordered_map>
 #include <sstream>
@@ -1642,15 +1608,13 @@ int main() {
     }
     return 0;
 }`,
-            testCases: [
-                { input: "hello world hello", expected: {hello: 2, world: 1} }
-            ]
+            testCases: [{ input: 'hello world hello', expected: { hello: 2, world: 1 } }],
         },
         {
             id: 10,
-            title: "Calculadora",
-            description: "Implemente calculadora simples",
-            difficulty: "medium",
+            title: 'Calculadora',
+            description: 'Implemente calculadora simples',
+            difficulty: 'medium',
             starter: `#include <iostream>
 using namespace std;
 
@@ -1680,15 +1644,13 @@ int main() {
     cout << calculator(10, '+', 5) << endl;
     return 0;
 }`,
-            testCases: [
-                { input: [10, '+', 5], expected: 15 }
-            ]
+            testCases: [{ input: [10, '+', 5], expected: 15 }],
         },
         {
             id: 11,
-            title: "Validação de Email",
-            description: "Valide formato de email",
-            difficulty: "medium",
+            title: 'Validação de Email',
+            description: 'Valide formato de email',
+            difficulty: 'medium',
             starter: `#include <iostream>
 #include <string>
 using namespace std;
@@ -1716,15 +1678,13 @@ int main() {
     cout << boolalpha << validateEmail("user@example.com") << endl;
     return 0;
 }`,
-            testCases: [
-                { input: "user@example.com", expected: true }
-            ]
+            testCases: [{ input: 'user@example.com', expected: true }],
         },
         {
             id: 12,
-            title: "Maior e Menor",
-            description: "Encontre maior e menor",
-            difficulty: "easy",
+            title: 'Maior e Menor',
+            description: 'Encontre maior e menor',
+            difficulty: 'easy',
             starter: `#include <iostream>
 #include <algorithm>
 using namespace std;
@@ -1754,15 +1714,13 @@ int main() {
     cout << max << " " << min << endl;
     return 0;
 }`,
-            testCases: [
-                { input: [3, 1, 4, 1, 5, 9], expected: [9, 1] }
-            ]
+            testCases: [{ input: [3, 1, 4, 1, 5, 9], expected: [9, 1] }],
         },
         {
             id: 13,
-            title: "Remover Duplicatas",
-            description: "Remova duplicatas do array",
-            difficulty: "easy",
+            title: 'Remover Duplicatas',
+            description: 'Remova duplicatas do array',
+            difficulty: 'easy',
             starter: `#include <iostream>
 #include <vector>
 #include <unordered_set>
@@ -1804,15 +1762,13 @@ int main() {
     }
     return 0;
 }`,
-            testCases: [
-                { input: [1, 2, 2, 3, 1, 4], expected: [1, 2, 3, 4] }
-            ]
+            testCases: [{ input: [1, 2, 2, 3, 1, 4], expected: [1, 2, 3, 4] }],
         },
         {
             id: 14,
-            title: "Merge Sort",
-            description: "Implemente Merge Sort",
-            difficulty: "hard",
+            title: 'Merge Sort',
+            description: 'Implemente Merge Sort',
+            difficulty: 'hard',
             starter: `#include <iostream>
 using namespace std;
 
@@ -1855,15 +1811,13 @@ int main() {
     for (int num : arr) cout << num << " ";
     return 0;
 }`,
-            testCases: [
-                { input: [64, 34, 25, 12], expected: [12, 25, 34, 64] }
-            ]
+            testCases: [{ input: [64, 34, 25, 12], expected: [12, 25, 34, 64] }],
         },
         {
             id: 15,
-            title: "Anagrama",
-            description: "Verifique se são anagramas",
-            difficulty: "easy",
+            title: 'Anagrama',
+            description: 'Verifique se são anagramas',
+            difficulty: 'easy',
             starter: `#include <iostream>
 #include <string>
 #include <algorithm>
@@ -1893,17 +1847,15 @@ int main() {
     cout << boolalpha << isAnagram("listen", "silent") << endl;
     return 0;
 }`,
-            testCases: [
-                { input: ["listen", "silent"], expected: true }
-            ]
-        }
+            testCases: [{ input: ['listen', 'silent'], expected: true }],
+        },
     ],
     go: [
         {
             id: 1,
-            title: "FizzBuzz",
-            description: "Imprima FizzBuzz de 1 a 100",
-            difficulty: "easy",
+            title: 'FizzBuzz',
+            description: 'Imprima FizzBuzz de 1 a 100',
+            difficulty: 'easy',
             starter: `package main
 
 import "fmt"
@@ -1941,15 +1893,15 @@ func main() {
     }
 }`,
             testCases: [
-                { input: 15, expected: "FizzBuzz" },
-                { input: 9, expected: "Fizz" }
-            ]
+                { input: 15, expected: 'FizzBuzz' },
+                { input: 9, expected: 'Fizz' },
+            ],
         },
         {
             id: 2,
-            title: "Palíndromo",
-            description: "Verifique se uma string é palíndromo",
-            difficulty: "easy",
+            title: 'Palíndromo',
+            description: 'Verifique se uma string é palíndromo',
+            difficulty: 'easy',
             starter: `package main
 
 import "fmt"
@@ -1994,15 +1946,15 @@ func main() {
     fmt.Println(isPalindrome("hello"))
 }`,
             testCases: [
-                { input: "radar", expected: true },
-                { input: "hello", expected: false }
-            ]
+                { input: 'radar', expected: true },
+                { input: 'hello', expected: false },
+            ],
         },
         {
             id: 3,
-            title: "Fibonacci",
-            description: "Retorne o n-ésimo número de Fibonacci",
-            difficulty: "easy",
+            title: 'Fibonacci',
+            description: 'Retorne o n-ésimo número de Fibonacci',
+            difficulty: 'easy',
             starter: `package main
 
 import "fmt"
@@ -2035,14 +1987,14 @@ func main() {
 }`,
             testCases: [
                 { input: 10, expected: 55 },
-                { input: 1, expected: 1 }
-            ]
+                { input: 1, expected: 1 },
+            ],
         },
         {
             id: 4,
-            title: "Fatorial",
-            description: "Calcule o fatorial de um número",
-            difficulty: "easy",
+            title: 'Fatorial',
+            description: 'Calcule o fatorial de um número',
+            difficulty: 'easy',
             starter: `package main
 
 import "fmt"
@@ -2071,14 +2023,14 @@ func main() {
 }`,
             testCases: [
                 { input: 5, expected: 120 },
-                { input: 0, expected: 1 }
-            ]
+                { input: 0, expected: 1 },
+            ],
         },
         {
             id: 5,
-            title: "Número Primo",
-            description: "Verifique se um número é primo",
-            difficulty: "easy",
+            title: 'Número Primo',
+            description: 'Verifique se um número é primo',
+            difficulty: 'easy',
             starter: `package main
 
 import "fmt"
@@ -2118,14 +2070,14 @@ func main() {
 }`,
             testCases: [
                 { input: 17, expected: true },
-                { input: 1, expected: false }
-            ]
+                { input: 1, expected: false },
+            ],
         },
         {
             id: 6,
-            title: "Bubble Sort",
-            description: "Implemente Bubble Sort",
-            difficulty: "medium",
+            title: 'Bubble Sort',
+            description: 'Implemente Bubble Sort',
+            difficulty: 'medium',
             starter: `package main
 
 import "fmt"
@@ -2163,15 +2115,13 @@ func main() {
         fmt.Print(num, " ")
     }
 }`,
-            testCases: [
-                { input: [5, 2, 8, 1], expected: [1, 2, 5, 8] }
-            ]
+            testCases: [{ input: [5, 2, 8, 1], expected: [1, 2, 5, 8] }],
         },
         {
             id: 7,
-            title: "Busca Binária",
-            description: "Implemente busca binária",
-            difficulty: "medium",
+            title: 'Busca Binária',
+            description: 'Implemente busca binária',
+            difficulty: 'medium',
             starter: `package main
 
 import "fmt"
@@ -2209,15 +2159,13 @@ func main() {
     arr := []int{1, 3, 5, 7, 9, 11, 13}
     fmt.Println(binarySearch(arr, 7))
 }`,
-            testCases: [
-                { input: [[1,3,5,7,9], 5], expected: 2 }
-            ]
+            testCases: [{ input: [[1, 3, 5, 7, 9], 5], expected: 2 }],
         },
         {
             id: 8,
-            title: "Reversão de String",
-            description: "Inverta uma string",
-            difficulty: "easy",
+            title: 'Reversão de String',
+            description: 'Inverta uma string',
+            difficulty: 'easy',
             starter: `package main
 
 import "fmt"
@@ -2245,15 +2193,13 @@ func reverseString(s string) string {
 func main() {
     fmt.Println(reverseString("hello"))
 }`,
-            testCases: [
-                { input: "hello", expected: "olleh" }
-            ]
+            testCases: [{ input: 'hello', expected: 'olleh' }],
         },
         {
             id: 9,
-            title: "Contagem de Palavras",
-            description: "Conte frequência de palavras",
-            difficulty: "medium",
+            title: 'Contagem de Palavras',
+            description: 'Conte frequência de palavras',
+            difficulty: 'medium',
             starter: `package main
 
 import "fmt"
@@ -2288,15 +2234,13 @@ func main() {
     result := wordCount("hello world hello")
     fmt.Println(result)
 }`,
-            testCases: [
-                { input: "hello world hello", expected: {hello: 2, world: 1} }
-            ]
+            testCases: [{ input: 'hello world hello', expected: { hello: 2, world: 1 } }],
         },
         {
             id: 10,
-            title: "Calculadora",
-            description: "Implemente calculadora simples",
-            difficulty: "medium",
+            title: 'Calculadora',
+            description: 'Implemente calculadora simples',
+            difficulty: 'medium',
             starter: `package main
 
 import "fmt"
@@ -2333,15 +2277,13 @@ func calculator(a float64, op string, b float64) float64 {
 func main() {
     fmt.Println(calculator(10, "+", 5))
 }`,
-            testCases: [
-                { input: [10, "+", 5], expected: 15 }
-            ]
+            testCases: [{ input: [10, '+', 5], expected: 15 }],
         },
         {
             id: 11,
-            title: "Validação de Email",
-            description: "Valide formato de email",
-            difficulty: "medium",
+            title: 'Validação de Email',
+            description: 'Valide formato de email',
+            difficulty: 'medium',
             starter: `package main
 
 import "fmt"
@@ -2370,15 +2312,15 @@ func main() {
     fmt.Println(validateEmail("user@example.com"))
 }`,
             testCases: [
-                { input: "user@example.com", expected: true },
-                { input: "invalid", expected: false }
-            ]
+                { input: 'user@example.com', expected: true },
+                { input: 'invalid', expected: false },
+            ],
         },
         {
             id: 12,
-            title: "Maior e Menor",
-            description: "Encontre maior e menor",
-            difficulty: "easy",
+            title: 'Maior e Menor',
+            description: 'Encontre maior e menor',
+            difficulty: 'easy',
             starter: `package main
 
 import "fmt"
@@ -2413,15 +2355,13 @@ func main() {
     max, min := findMaxMin([]int{3, 1, 4, 1, 5, 9})
     fmt.Println(max, min)
 }`,
-            testCases: [
-                { input: [3, 1, 4, 1, 5, 9], expected: [9, 1] }
-            ]
+            testCases: [{ input: [3, 1, 4, 1, 5, 9], expected: [9, 1] }],
         },
         {
             id: 13,
-            title: "Remover Duplicatas",
-            description: "Remova duplicatas do slice",
-            difficulty: "easy",
+            title: 'Remover Duplicatas',
+            description: 'Remova duplicatas do slice',
+            difficulty: 'easy',
             starter: `package main
 
 import "fmt"
@@ -2453,15 +2393,13 @@ func removeDuplicates(arr []int) []int {
 func main() {
     fmt.Println(removeDuplicates([]int{1, 2, 2, 3, 1, 4}))
 }`,
-            testCases: [
-                { input: [1, 2, 2, 3, 1, 4], expected: [1, 2, 3, 4] }
-            ]
+            testCases: [{ input: [1, 2, 2, 3, 1, 4], expected: [1, 2, 3, 4] }],
         },
         {
             id: 14,
-            title: "Quick Sort",
-            description: "Implemente Quick Sort",
-            difficulty: "hard",
+            title: 'Quick Sort',
+            description: 'Implemente Quick Sort',
+            difficulty: 'hard',
             starter: `package main
 
 import "fmt"
@@ -2503,15 +2441,13 @@ func main() {
     arr := []int{64, 34, 25, 12, 22, 11, 90}
     fmt.Println(quickSort(arr))
 }`,
-            testCases: [
-                { input: [64, 34, 25, 12], expected: [12, 25, 34, 64] }
-            ]
+            testCases: [{ input: [64, 34, 25, 12], expected: [12, 25, 34, 64] }],
         },
         {
             id: 15,
-            title: "Anagrama",
-            description: "Verifique se são anagramas",
-            difficulty: "easy",
+            title: 'Anagrama',
+            description: 'Verifique se são anagramas',
+            difficulty: 'easy',
             starter: `package main
 
 import "fmt"
@@ -2547,34 +2483,53 @@ func isAnagram(s1, s2 string) bool {
 func main() {
     fmt.Println(isAnagram("listen", "silent"))
 }`,
-            testCases: [
-                { input: ["listen", "silent"], expected: true }
-            ]
-        }
-    ]
+            testCases: [{ input: ['listen', 'silent'], expected: true }],
+        },
+    ],
 };
 
 const LANGUAGE_INFO = {
-    python: { name: "Python", icon: "🐍", color: "#3776ab" },
-    javascript: { name: "JavaScript", icon: "🌐", color: "#f7df1e" },
-    java: { name: "Java", icon: "☕", color: "#ed8b00" },
-    cpp: { name: "C++", icon: "⚡", color: "#00599c" },
-    go: { name: "Go", icon: "🔷", color: "#00add8" }
+    python: { name: 'Python', icon: '🐍', color: '#3776ab' },
+    javascript: { name: 'JavaScript', icon: '🌐', color: '#f7df1e' },
+    java: { name: 'Java', icon: '☕', color: '#ed8b00' },
+    cpp: { name: 'C++', icon: '⚡', color: '#00599c' },
+    go: { name: 'Go', icon: '🔷', color: '#00add8' },
 };
 
 const ACHIEVEMENTS = [
-    { id: "first_exercise", name: "Primeiro Passo", desc: "Complete seu primeiro exercício", icon: "🎯" },
-    { id: "first_language", name: "Polyglot", desc: "Complete todos os exercícios de uma linguagem", icon: "🌍" },
-    { id: "easy_master", name: "Iniciante Dev", desc: "Complete 10 exercícios fáceis", icon: "⭐" },
-    { id: "medium_master", name: "Desenvolvedor", desc: "Complete 10 exercícios médios", icon: "🚀" },
-    { id: "hard_master", name: "Expert", desc: "Complete 10 exercícios difíceis", icon: "💎" },
-    { id: "all_languages", name: "Mestre das Linguagens", desc: "Complete exercícios em todas as linguagens", icon: "🏆" }
+    {
+        id: 'first_exercise',
+        name: 'Primeiro Passo',
+        desc: 'Complete seu primeiro exercício',
+        icon: '🎯',
+    },
+    {
+        id: 'first_language',
+        name: 'Polyglot',
+        desc: 'Complete todos os exercícios de uma linguagem',
+        icon: '🌍',
+    },
+    { id: 'easy_master', name: 'Iniciante Dev', desc: 'Complete 10 exercícios fáceis', icon: '⭐' },
+    {
+        id: 'medium_master',
+        name: 'Desenvolvedor',
+        desc: 'Complete 10 exercícios médios',
+        icon: '🚀',
+    },
+    { id: 'hard_master', name: 'Expert', desc: 'Complete 10 exercícios difíceis', icon: '💎' },
+    {
+        id: 'all_languages',
+        name: 'Mestre das Linguagens',
+        desc: 'Complete exercícios em todas as linguagens',
+        icon: '🏆',
+    },
 ];
 
 const App = {
     currentUser: null,
     currentLanguage: null,
     currentExercise: null,
+    currentPage: 'login',
     isFullscreen: false,
 
     init() {
@@ -2603,37 +2558,69 @@ const App = {
     },
 
     setupNavigation() {
-        const radios = document.querySelectorAll('input[name="page"]');
-        radios.forEach(radio => {
-            radio.addEventListener('change', () => this.updateUI());
+        document.querySelectorAll('[data-page]').forEach(el => {
+            el.addEventListener('click', () => {
+                const page = el.dataset.page;
+                if (page && this.currentUser) {
+                    this.navigateTo(page);
+                }
+            });
         });
     },
 
+    navigateTo(page) {
+        this.currentPage = page;
+
+        document.querySelectorAll('.page').forEach(p => p.classList.add('hidden'));
+        document.getElementById(`page-${page}`)?.classList.remove('hidden');
+
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.classList.toggle('active', tab.dataset.page === page);
+        });
+
+        if (page === 'dashboard') {
+            this.renderDashboard();
+        } else if (page === 'exercises') {
+            if (!this.currentLanguage) {
+                this.showLanguageSelector();
+            }
+        } else if (page === 'progress') {
+            this.renderProgress();
+        }
+    },
+
     updateUI() {
-        const loginRadio = document.getElementById('page-login');
-        const dashboardRadio = document.getElementById('page-dashboard');
-        const exercisesRadio = document.getElementById('page-exercises');
-        const progressRadio = document.getElementById('page-progress');
+        const headerActions = document.getElementById('header-actions');
+        const navTabs = document.getElementById('nav-tabs');
+        const loginPage = document.getElementById('page-login');
 
         if (!this.currentUser) {
-            loginRadio.checked = true;
-            document.getElementById('header-actions').style.display = 'none';
+            loginPage.classList.remove('hidden');
+            headerActions.classList.add('hidden');
+            navTabs.classList.add('hidden');
+            this.currentPage = 'login';
         } else {
-            dashboardRadio.checked = true;
-            document.getElementById('header-actions').style.display = 'flex';
+            loginPage.classList.add('hidden');
+            headerActions.classList.remove('hidden');
+            navTabs.classList.remove('hidden');
             document.getElementById('user-name').textContent = this.currentUser.name;
-            document.getElementById('user-avatar').textContent = this.currentUser.name.charAt(0).toUpperCase();
+            document.getElementById('user-avatar').textContent = this.currentUser.name
+                .charAt(0)
+                .toUpperCase();
+
+            if (this.currentPage === 'login') {
+                this.navigateTo('dashboard');
+            }
         }
 
         this.renderDashboard();
-        this.renderExercises();
         this.renderProgress();
     },
 
     login(name) {
         const existingData = localStorage.getItem('training_user');
         let userData;
-        
+
         if (existingData) {
             try {
                 userData = JSON.parse(existingData);
@@ -2642,20 +2629,20 @@ const App = {
                 userData = null;
             }
         }
-        
+
         if (!userData) {
             userData = {
                 name: name,
                 createdAt: new Date().toISOString(),
                 progress: {},
                 achievements: [],
-                activity: []
+                activity: [],
             };
             Object.keys(EXERCISES).forEach(lang => {
                 userData.progress[lang] = { completed: [], started: [] };
             });
         }
-        
+
         this.currentUser = userData;
         this.saveUser();
         this.updateUI();
@@ -2663,19 +2650,40 @@ const App = {
 
     logout() {
         this.currentUser = null;
+        this.currentLanguage = null;
+        this.currentExercise = null;
         localStorage.removeItem('training_user');
         this.updateUI();
     },
 
     selectLanguage(lang) {
         this.currentLanguage = lang;
-        document.getElementById('page-exercises').checked = true;
+        this.currentExercise = null;
         this.renderExercises();
+        document.getElementById('exercise-editor')?.classList.add('hidden');
     },
 
     selectExercise(exercise) {
         this.currentExercise = exercise;
         this.renderExerciseEditor();
+        document.getElementById('exercise-editor')?.classList.remove('hidden');
+    },
+
+    showLanguageSelector() {
+        const langGrid = document.getElementById('dashboard-languages');
+        document.getElementById('exercise-list').innerHTML = `
+            <div class="empty-state">
+                <span>📚</span>
+                <h3>Selecione uma linguagem</h3>
+                <p>Escolha uma linguagem para começar</p>
+            </div>
+        `;
+    },
+
+    backToLanguages() {
+        this.currentLanguage = null;
+        this.currentExercise = null;
+        this.navigateTo('dashboard');
     },
 
     renderDashboard() {
@@ -2689,7 +2697,7 @@ const App = {
         let totalExercises = 0;
         Object.keys(EXERCISES).forEach(lang => {
             totalExercises += EXERCISES[lang].length;
-            totalCompleted += (this.currentUser.progress[lang]?.completed?.length || 0);
+            totalCompleted += this.currentUser.progress[lang]?.completed?.length || 0;
         });
 
         stats.innerHTML = `
@@ -2707,11 +2715,14 @@ const App = {
             </div>
         `;
 
-        langGrid.innerHTML = Object.keys(EXERCISES).map(lang => {
-            const info = LANGUAGE_INFO[lang];
-            const progress = this.currentUser.progress[lang] || { completed: [] };
-            const percent = Math.round((progress.completed.length / EXERCISES[lang].length) * 100);
-            return `
+        langGrid.innerHTML = Object.keys(EXERCISES)
+            .map(lang => {
+                const info = LANGUAGE_INFO[lang];
+                const progress = this.currentUser.progress[lang] || { completed: [] };
+                const percent = Math.round(
+                    (progress.completed.length / EXERCISES[lang].length) * 100
+                );
+                return `
                 <div class="language-card ${lang}" onclick="App.selectLanguage('${lang}')">
                     <div class="language-icon">${info.icon}</div>
                     <div class="language-name">${info.name}</div>
@@ -2721,13 +2732,17 @@ const App = {
                     </div>
                 </div>
             `;
-        }).join('');
+            })
+            .join('');
 
         const activities = this.currentUser.activity?.slice(-10).reverse() || [];
         if (activities.length === 0) {
-            activityList.innerHTML = '<div class="empty-state"><span>📝</span><p>Nenhuma atividade ainda</p></div>';
+            activityList.innerHTML =
+                '<div class="empty-state"><span>📝</span><p>Nenhuma atividade ainda</p></div>';
         } else {
-            activityList.innerHTML = activities.map(a => `
+            activityList.innerHTML = activities
+                .map(
+                    a => `
                 <div class="activity-item">
                     <div class="activity-icon ${a.type}">${a.type === 'completed' ? '✅' : '▶️'}</div>
                     <div class="activity-info">
@@ -2735,29 +2750,24 @@ const App = {
                         <div class="activity-time">${LANGUAGE_INFO[a.language]?.icon} ${LANGUAGE_INFO[a.language]?.name} • ${this.formatTime(a.timestamp)}</div>
                     </div>
                 </div>
-            `).join('');
+            `
+                )
+                .join('');
         }
     },
 
     renderExercises() {
         if (!this.currentLanguage) {
-            document.getElementById('exercise-list').innerHTML = `
-                <div class="empty-state">
-                    <span>🏋️</span>
-                    <h3>Selecione uma linguagem</h3>
-                    <p>Escolha uma linguagem no dashboard para ver os exercícios</p>
-                </div>
-            `;
-            document.getElementById('exercise-editor').style.display = 'none';
             return;
         }
 
         const exercises = EXERCISES[this.currentLanguage];
         const progress = this.currentUser.progress[this.currentLanguage] || { completed: [] };
 
-        document.getElementById('exercise-list').innerHTML = exercises.map(ex => {
-            const isCompleted = progress.completed.includes(ex.id);
-            return `
+        document.getElementById('exercise-list').innerHTML = exercises
+            .map(ex => {
+                const isCompleted = progress.completed.includes(ex.id);
+                return `
                 <div class="exercise-item ${isCompleted ? 'completed' : ''}" onclick="App.selectExercise(${ex.id})">
                     <div class="exercise-number">${isCompleted ? '✓' : ex.id}</div>
                     <div class="exercise-info">
@@ -2767,7 +2777,8 @@ const App = {
                     <span class="exercise-difficulty difficulty-${ex.difficulty}">${ex.difficulty}</span>
                 </div>
             `;
-        }).join('');
+            })
+            .join('');
 
         document.getElementById('exercise-editor').style.display = 'none';
     },
@@ -2784,17 +2795,43 @@ const App = {
         document.getElementById('exercise-editor').style.display = 'block';
         document.getElementById('exercise-title').textContent = exercise.title;
         document.getElementById('exercise-desc').textContent = exercise.description;
-        document.getElementById('language-badge').className = `language-badge ${this.currentLanguage}`;
+        document.getElementById('language-badge').className =
+            `language-badge ${this.currentLanguage}`;
         document.getElementById('language-badge').innerHTML = `${info.icon} ${info.name}`;
-        document.getElementById('exercise-difficulty').className = `exercise-difficulty difficulty-${exercise.difficulty}`;
+        document.getElementById('exercise-difficulty').className =
+            `exercise-difficulty difficulty-${exercise.difficulty}`;
         document.getElementById('exercise-difficulty').textContent = exercise.difficulty;
 
-        const savedCode = this.currentUser.code?.[`${this.currentLanguage}_${exercise.id}`] || exercise.starter;
+        const savedCode =
+            this.currentUser.code?.[`${this.currentLanguage}_${exercise.id}`] || exercise.starter;
         document.getElementById('code-editor').value = savedCode;
         document.getElementById('output').textContent = '';
 
-        document.getElementById('btn-show-solution').style.display = isCompleted ? 'none' : 'inline-flex';
-        document.getElementById('btn-mark-complete').style.display = isCompleted ? 'none' : 'inline-flex';
+        document.getElementById('btn-show-solution').style.display = isCompleted
+            ? 'none'
+            : 'inline-flex';
+        document.getElementById('btn-mark-complete').style.display = isCompleted
+            ? 'none'
+            : 'inline-flex';
+
+        document.getElementById('fs-exercise-title').textContent = exercise.title;
+        document.getElementById('fs-exercise-desc').textContent = exercise.description;
+        document.getElementById('fs-language-badge').className =
+            `language-badge ${this.currentLanguage}`;
+        document.getElementById('fs-language-badge').innerHTML = `${info.icon} ${info.name}`;
+        document.getElementById('fs-exercise-difficulty').className =
+            `exercise-difficulty difficulty-${exercise.difficulty}`;
+        document.getElementById('fs-exercise-difficulty').textContent = exercise.difficulty;
+        document.getElementById('fs-code-editor').value = savedCode;
+        document.getElementById('btn-solution-fullscreen').style.display = isCompleted
+            ? 'none'
+            : 'inline-flex';
+        document.getElementById('btn-complete-fullscreen').style.display = isCompleted
+            ? 'none'
+            : 'inline-flex';
+        document.getElementById('output-fullscreen').textContent =
+            'Execute o código para ver o resultado...';
+        document.getElementById('output-fullscreen').className = 'output-content';
     },
 
     saveCode() {
@@ -2814,8 +2851,8 @@ const App = {
     executeInSandbox(code, callback) {
         const iframe = document.getElementById('sandbox-iframe');
         const logs = [];
-        
-        const messageHandler = (event) => {
+
+        const messageHandler = event => {
             if (event.data.type === 'sandbox-log') {
                 logs.push(event.data.message);
             } else if (event.data.type === 'sandbox-error') {
@@ -2826,9 +2863,9 @@ const App = {
                 callback(logs, null);
             }
         };
-        
+
         window.addEventListener('message', messageHandler);
-        
+
         const wrappedCode = `
             (function() {
                 const logs = [];
@@ -2840,7 +2877,7 @@ const App = {
                 }
             })();
         `;
-        
+
         iframe.srcdoc = `<script>
             window.console = {
                 log: (...args) => parent.postMessage({
@@ -2855,7 +2892,7 @@ const App = {
                 parent.postMessage({ type: 'sandbox-error', message: e.message }, '*');
             }
         <\/script>`;
-        
+
         setTimeout(() => {
             window.removeEventListener('message', messageHandler);
             callback(null, 'Timeout: código não respondeu');
@@ -2865,7 +2902,7 @@ const App = {
     runCode() {
         const code = document.getElementById('code-editor').value;
         const output = document.getElementById('output');
-        
+
         this.saveCode();
 
         if (this.currentLanguage === 'javascript') {
@@ -2879,7 +2916,8 @@ const App = {
                 }
             });
         } else {
-            output.textContent = 'A execução de código requer um ambiente de runtime.\nPara executar código Python, Java, C++ ou Go, use um IDE local ou plataformas online como:\n\n• Python: https://www.python.org/shell/\n• Java: https://www.jdoodle.com/\n• C++: https://www.jdoodle.com/c-online-compiler/\n• Go: https://play.golang.org/';
+            output.textContent =
+                'A execução de código requer um ambiente de runtime.\nPara executar código Python, Java, C++ ou Go, use um IDE local ou plataformas online como:\n\n• Python: https://www.python.org/shell/\n• Java: https://www.jdoodle.com/\n• C++: https://www.jdoodle.com/c-online-compiler/\n• Go: https://play.golang.org/';
             output.className = 'output-content';
         }
     },
@@ -2895,7 +2933,7 @@ const App = {
 
         const primary = document.getElementById(primaryEditorId);
         const secondary = secondaryEditorId ? document.getElementById(secondaryEditorId) : null;
-        
+
         primary.value = exercise.solution;
         if (secondary) secondary.value = exercise.solution;
         this.saveCode();
@@ -2922,7 +2960,7 @@ const App = {
                 type: 'completed',
                 exercise: exercise.title,
                 language: this.currentLanguage,
-                timestamp: Date.now()
+                timestamp: Date.now(),
             });
 
             this.checkAchievements();
@@ -2939,9 +2977,11 @@ const App = {
 
     checkAchievements() {
         this.currentUser.achievements = this.currentUser.achievements || [];
-        
+
         let totalCompleted = 0;
-        let easyCompleted = 0, mediumCompleted = 0, hardCompleted = 0;
+        let easyCompleted = 0,
+            mediumCompleted = 0,
+            hardCompleted = 0;
         let languagesStarted = 0;
 
         Object.keys(EXERCISES).forEach(lang => {
@@ -2979,7 +3019,10 @@ const App = {
         if (hardCompleted >= 10 && !this.currentUser.achievements.includes('hard_master')) {
             this.currentUser.achievements.push('hard_master');
         }
-        if (languagesStarted === Object.keys(EXERCISES).length && !this.currentUser.achievements.includes('all_languages')) {
+        if (
+            languagesStarted === Object.keys(EXERCISES).length &&
+            !this.currentUser.achievements.includes('all_languages')
+        ) {
             this.currentUser.achievements.push('all_languages');
         }
     },
@@ -2992,22 +3035,24 @@ const App = {
 
         const languages = Object.keys(EXERCISES);
         const maxHeight = 180;
-        
+
         chartContainer.innerHTML = `
             <div class="chart-title">Progresso por Linguagem</div>
             <div class="bar-chart">
-                ${languages.map(lang => {
-                    const completed = this.currentUser.progress[lang]?.completed?.length || 0;
-                    const total = EXERCISES[lang].length;
-                    const height = (completed / total) * maxHeight;
-                    const info = LANGUAGE_INFO[lang];
-                    return `
+                ${languages
+                    .map(lang => {
+                        const completed = this.currentUser.progress[lang]?.completed?.length || 0;
+                        const total = EXERCISES[lang].length;
+                        const height = (completed / total) * maxHeight;
+                        const info = LANGUAGE_INFO[lang];
+                        return `
                         <div class="bar-item">
                             <div class="bar" style="height: ${height}px; background: ${info.color};" data-value="${completed}"></div>
                             <div class="bar-label">${info.icon}<br>${completed}/${total}</div>
                         </div>
                     `;
-                }).join('')}
+                    })
+                    .join('')}
             </div>
         `;
 
@@ -3040,44 +3085,46 @@ const App = {
     backToLanguages() {
         this.currentLanguage = null;
         this.currentExercise = null;
-        document.getElementById('exercise-editor').style.display = 'none';
-        this.renderExercises();
+        this.navigateTo('dashboard');
     },
 
     toggleFullscreen() {
         this.isFullscreen = !this.isFullscreen;
-        const fullscreenEditor = document.getElementById('fullscreen-editor');
+        const fullscreenContainer = document.getElementById('fullscreen-container');
         const exitBtn = document.getElementById('exit-fullscreen-btn');
         const normalEditor = document.getElementById('exercise-editor');
-        
+
         if (this.isFullscreen) {
-            fullscreenEditor.classList.add('active');
-            exitBtn.style.display = 'flex';
-            normalEditor.style.visibility = 'hidden';
-            const textarea = document.getElementById('code-editor');
+            fullscreenContainer.classList.remove('hidden');
+            exitBtn.classList.remove('hidden');
+            normalEditor.classList.add('hidden');
+            const textarea = document.getElementById('fs-code-editor');
             if (textarea) textarea.focus();
         } else {
-            fullscreenEditor.classList.remove('active');
-            exitBtn.style.display = 'none';
-            normalEditor.style.visibility = 'visible';
+            fullscreenContainer.classList.add('hidden');
+            exitBtn.classList.add('hidden');
+            normalEditor.classList.remove('hidden');
         }
     },
 
     exitFullscreen() {
         this.isFullscreen = false;
-        const fullscreenEditor = document.getElementById('fullscreen-editor');
+        const fullscreenContainer = document.getElementById('fullscreen-container');
         const exitBtn = document.getElementById('exit-fullscreen-btn');
         const normalEditor = document.getElementById('exercise-editor');
-        
-        fullscreenEditor.classList.remove('active');
-        exitBtn.style.display = 'none';
-        normalEditor.style.visibility = 'visible';
+
+        fullscreenContainer.classList.add('hidden');
+        exitBtn.classList.add('hidden');
+        normalEditor.classList.remove('hidden');
+
+        const fsCode = document.getElementById('fs-code-editor').value;
+        document.getElementById('code-editor').value = fsCode;
     },
 
     runCodeFullscreen() {
         const code = document.getElementById('fs-code-editor').value;
         const output = document.getElementById('output-fullscreen');
-        
+
         this.saveCode();
 
         if (this.currentLanguage === 'javascript') {
@@ -3091,24 +3138,28 @@ const App = {
                 }
             });
         } else {
-            output.textContent = 'A execução de código requer um ambiente de runtime.\nPara executar código Python, Java, C++ ou Go, use um IDE local ou plataformas online como:\n\n• Python: https://www.python.org/shell/\n• Java: https://www.jdoodle.com/\n• C++: https://www.jdoodle.com/c-online-compiler/\n• Go: https://play.golang.org/';
+            output.textContent =
+                'A execução de código requer um ambiente de runtime.\nPara executar código Python, Java, C++ ou Go, use um IDE local ou plataformas online como:\n\n• Python: https://www.python.org/shell/\n• Java: https://www.jdoodle.com/\n• C++: https://www.jdoodle.com/c-online-compiler/\n• Go: https://play.golang.org/';
             output.className = 'output-content';
         }
     },
 
     showSolutionFullscreen() {
         this._showSolution('fs-code-editor', 'code-editor');
+        const code = document.getElementById('code-editor').value;
+        document.getElementById('fs-code-editor').value = code;
     },
 
     markCompleteFullscreen() {
         this._markComplete('output-fullscreen');
-    }
+        this.markComplete();
+    },
 };
 
 document.addEventListener('DOMContentLoaded', () => {
     App.init();
-    
-    document.getElementById('login-form').addEventListener('submit', (e) => {
+
+    document.getElementById('login-form').addEventListener('submit', e => {
         e.preventDefault();
         const name = document.getElementById('login-name').value.trim();
         if (name) {
@@ -3118,23 +3169,52 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('logout-btn').addEventListener('click', () => App.logout());
     document.getElementById('btn-run').addEventListener('click', () => App.runCode());
-    document.getElementById('btn-show-solution').addEventListener('click', () => App.showSolution());
-    document.getElementById('btn-mark-complete').addEventListener('click', () => App.markComplete());
+    document
+        .getElementById('btn-show-solution')
+        .addEventListener('click', () => App.showSolution());
+    document
+        .getElementById('btn-mark-complete')
+        .addEventListener('click', () => App.markComplete());
     document.getElementById('btn-back').addEventListener('click', () => App.backToLanguages());
     document.getElementById('code-editor').addEventListener('blur', () => App.saveCode());
-    
-    document.getElementById('expand-fullscreen').addEventListener('click', () => App.toggleFullscreen());
-    document.getElementById('exit-fullscreen-btn').addEventListener('click', () => App.exitFullscreen());
-    document.getElementById('btn-run-fullscreen').addEventListener('click', () => App.runCodeFullscreen());
-    document.getElementById('btn-solution-fullscreen').addEventListener('click', () => App.showSolutionFullscreen());
-    document.getElementById('btn-complete-fullscreen').addEventListener('click', () => App.markCompleteFullscreen());
-    
-    document.addEventListener('keydown', (e) => {
+
+    document
+        .getElementById('expand-fullscreen')
+        .addEventListener('click', () => App.toggleFullscreen());
+    document
+        .getElementById('exit-fullscreen-btn')
+        .addEventListener('click', () => App.exitFullscreen());
+    document
+        .getElementById('btn-run-fullscreen')
+        .addEventListener('click', () => App.runCodeFullscreen());
+    document
+        .getElementById('btn-solution-fullscreen')
+        .addEventListener('click', () => App.showSolutionFullscreen());
+    document
+        .getElementById('btn-complete-fullscreen')
+        .addEventListener('click', () => App.markCompleteFullscreen());
+
+    document.addEventListener('keydown', e => {
         if (e.key === 'Escape' && App.isFullscreen) {
             App.exitFullscreen();
         }
         if (e.key === 'Enter' && e.ctrlKey && App.isFullscreen) {
             App.runCodeFullscreen();
         }
+    });
+
+    document.getElementById('code-editor')?.addEventListener('input', function () {
+        const fsEditor = document.getElementById('fs-code-editor');
+        if (fsEditor && App.isFullscreen) {
+            fsEditor.value = this.value;
+        }
+    });
+
+    document.getElementById('fs-code-editor')?.addEventListener('input', function () {
+        const normalEditor = document.getElementById('code-editor');
+        if (normalEditor) {
+            normalEditor.value = this.value;
+        }
+        App.saveCode();
     });
 });
