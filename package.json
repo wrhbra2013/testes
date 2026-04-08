@@ -1,0 +1,17 @@
+{
+    "name": "codetrain",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "CodeTrain - Plataforma de Treinamento em Programação",
+    "scripts": {
+        "lint": "eslint static/js/training.js",
+        "lint:fix": "eslint static/js/training.js --fix",
+        "format": "prettier --write \"static/js/**/*.js\" \"static/css/**/*.css\" \"*.html\"",
+        "test": "echo \"No tests configured\" && exit 0"
+    },
+    "devDependencies": {
+        "eslint": "^8.57.0",
+        "prettier": "^3.0.0"
+    },
+    "license": "GPL-3.0"
+}
