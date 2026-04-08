@@ -29,6 +29,11 @@
     <body>
         <iframe id="sandbox-iframe" sandbox="allow-scripts" style="display: none"></iframe>
 
+        <input type="radio" name="page" id="page-login" checked />
+        <input type="radio" name="page" id="page-dashboard" />
+        <input type="radio" name="page" id="page-exercises" />
+        <input type="radio" name="page" id="page-progress" />
+
         <header class="header" onclick="window.location.href = '../../index.html'">
             <div class="logo">
                 <span>💻</span>
@@ -257,10 +262,6 @@
 
         <script src="static/js/training.js"></script>
         <script>
-            document.getElementById('login-name').style.pointerEvents = 'auto';
-            document.getElementById('login-name').style.opacity = '1';
-            document.getElementById('login-name').style.visibility = 'visible';
-
             const originalRender = App.renderExerciseEditor.bind(App);
             App.renderExerciseEditor = function () {
                 originalRender();
