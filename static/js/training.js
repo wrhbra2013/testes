@@ -2535,6 +2535,14 @@ const App = {
     init() {
         this.loadUser();
         this.setupNavigation();
+
+        if (!this.currentUser) {
+            const name = prompt('Digite seu nome para começar:');
+            if (name && name.trim()) {
+                this.login(name.trim());
+            }
+        }
+
         this.updateUI();
     },
 
@@ -2592,15 +2600,11 @@ const App = {
     updateUI() {
         const headerActions = document.getElementById('header-actions');
         const navTabs = document.getElementById('nav-tabs');
-        const loginPage = document.getElementById('page-login');
 
         if (!this.currentUser) {
-            loginPage.classList.remove('hidden');
             headerActions.classList.add('hidden');
             navTabs.classList.add('hidden');
-            this.currentPage = 'login';
         } else {
-            loginPage.classList.add('hidden');
             headerActions.classList.remove('hidden');
             navTabs.classList.remove('hidden');
             document.getElementById('user-name').textContent = this.currentUser.name;
@@ -2653,7 +2657,13 @@ const App = {
         this.currentLanguage = null;
         this.currentExercise = null;
         localStorage.removeItem('training_user');
-        this.updateUI();
+
+        const name = prompt('Digite seu nome para continuar:');
+        if (name && name.trim()) {
+            this.login(name.trim());
+        } else {
+            this.updateUI();
+        }
     },
 
     selectLanguage(lang) {
@@ -3159,15 +3169,11 @@ const App = {
 document.addEventListener('DOMContentLoaded', () => {
     App.init();
 
-    document.getElementById('login-form').addEventListener('submit', e => {
-        e.preventDefault();
-        const name = document.getElementById('login-name').value.trim();
-        if (name) {
-            App.login(name);
+    document.getElementById('logout-btn').addEventListener('click', () => {
+        if (confirm('Deseja sair? Seu progresso será mantido.')) {
+            App.logout();
         }
     });
-
-    document.getElementById('logout-btn').addEventListener('click', () => App.logout());
     document.getElementById('btn-run').addEventListener('click', () => App.runCode());
     document
         .getElementById('btn-show-solution')
